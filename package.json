@@ -4,7 +4,11 @@
   "description": "JavaScript development environment Pluralsight course by Cory House",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "node server/start-message.js",
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "localtunnel": "lt --port 3000",
+    "share": "npm-run-all --parallel start localtunnel"
   },
   "author": "a-faraz",
   "license": "ISC",
