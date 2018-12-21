@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "prestart": "babel-node server/start-message.js",
-    "start": "babel-node server/server.js",
+    "start": "npm-run-all --parallel open:server lint:watch",
+    "open:server": "babel-node server/server.js",
+    "lint": "esw webpack.config.* client server",
+    "lint:watch": "npm run lint -- --watch ",
     "test": "echo \"Error: no test specified\" && exit 1",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel start localtunnel"
