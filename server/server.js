@@ -19,9 +19,9 @@ app.get('/', (req, res) => {
 
 app.get('/users', (req, res) => {
   const users = [
-    { id: '0001', first_name: 'Charles', last_name: 'Dickens', email: 'CDickens@email.com' },
-    { id: '0002', first_name: 'Mark', last_name: 'Twain', email: 'MTwain@email.com' },
-    { id: '0003', first_name: 'George', last_name: 'Orwell', email: 'GOrwell@email.com' }
+    { id: '0001', firstName: 'Charles', lastName: 'Dickens', email: 'CDickens@email.com' },
+    { id: '0002', firstName: 'Mark', lastName: 'Twain', email: 'MTwain@email.com' },
+    { id: '0003', firstName: 'George', lastName: 'Orwell', email: 'GOrwell@email.com' }
   ];
   res.json(users);
 });

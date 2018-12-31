@@ -7,7 +7,7 @@ getUsers().then(results => {
     usersTable += `<tr>
         <td><a href="#" data-id="${user.id}" class="deleteUser">Delete</a></td>
         <td>${user.id}</td>
-        <td>${user.first_name} ${user.last_name}</td>
+        <td>${user.firstName} ${user.lastName}</td>
         <td>${user.email}</td>
       </tr>`;
   });

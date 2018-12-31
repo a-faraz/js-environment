@@ -14,11 +14,11 @@ export const schema = {
             unique: true,
             minimum: 1
           },
-          first_name: {
+          firstName: {
             type: 'string',
             faker: 'name.firstName'
           },
-          last_name: {
+          lastName: {
             type: 'string',
             faker: 'name.lastName'
           },
@@ -27,7 +27,7 @@ export const schema = {
             faker: 'internet.email'
           }
         },
-        required: ['id', 'first_name', 'last_name', 'email'] // These properties will not be generated if not required
+        required: ['id', 'firstName', 'lastName', 'email'] // These properties will not be generated if not required
       }
     }
   },
